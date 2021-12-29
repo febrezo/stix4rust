@@ -1,0 +1,9 @@
+{
+    "type": "tool",
+    "spec_version": "2.1",
+    "id": "tool--984fe0d8-689e-11ec-a650-3b8a7f05cbbd",
+    "created": "2014-12-30T23:53:00.000Z",
+    "modified": "2021-11-24T04:07:00.000Z",
+    "name": "OSRFramework",
+    "tool_types": ["information-gathering"]
+}

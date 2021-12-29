@@ -32,3 +32,9 @@ pub struct GranularMarking {
     #[validate(length(min = 1))]
     pub selectors: Vec<String>,
 }
+
+#[derive(Serialize, Deserialize, Validate, Debug)]
+pub struct KillChainPhase {  
+    pub kill_chain_name: String,
+    pub phase_name: String,
+}

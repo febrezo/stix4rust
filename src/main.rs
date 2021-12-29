@@ -7,7 +7,7 @@ use argparse::{
     StoreTrue, 
     Store
 };
-use crate::core::sdos::SDO;
+use crate::core::STIXObject;
 
 fn main() -> Result<(), Box<dyn Error>> {
     let mut verbose = false;
@@ -42,10 +42,8 @@ fn main() -> Result<(), Box<dyn Error>> {
     if verbose {
         println!("> Content read:\n'{}'", text);
     }
-    if verbose {
-        println!("> Trying to deserialize STIX content…");
-    }
-    let object: SDO = serde_json::from_str(&text).unwrap();
+    println!("> Deserializing STIX content…");
+    let object: Box<dyn STIXObject> = serde_json::from_str(&text).unwrap();
     if verbose {
         println!("> Deserialized Object:\n{:#?}", object);
     }

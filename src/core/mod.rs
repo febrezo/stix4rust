@@ -1,15 +1,17 @@
+use std::fmt::Debug;
 pub mod patterns;
 pub mod scos;
 pub mod sdos;
 pub mod sros;
 pub mod types;
 
-
 /// This trait implements the basic functionalities for STIX objects.
-pub trait STIXObject {
-    // fn build_new_id_for_type(&self, obj_type: String) -> String {
-    //     format!("{}--{}", obj_type, Uuid::new_v4())
-    // }
+
+#[typetag::serde(tag = "type")]
+pub trait STIXObject : Debug {
+    fn build_new_id_for_type(&self, obj_type: String) -> String {
+        format!("{}--{}", obj_type, uuid::Uuid::new_v4())
+    }
     // fn is_non_standard_stix_type(&self) -> bool {
     //     self.type.starts_with("x-")
     // }

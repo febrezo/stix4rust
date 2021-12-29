@@ -1,0 +1,36 @@
+{
+    "type": "tool",
+    "spec_version": "2.1",
+    "id": "tool--984fe0d8-689e-11ec-a650-3b8a7f05cbbd",
+    "created": "2014-12-30T23:53:00.000Z",
+    "modified": "2021-11-24T04:07:00.000Z",
+    "created_by_ref": "identity--a0201c24-689e-11ec-b547-57479a05b2eb",
+    "revoked": false,
+    "labels": ["osint"],
+    "confidence": 100,
+    "lang": "en",
+    "external_references": [
+        {
+            "source_name": "Github",
+            "url": "https://github.com/i3visio/osrframework"
+        }
+    ],
+    "granular_markings": [
+        {
+            "lang": "es",
+            "selectors": ["sel1", "sel2"]
+        }
+    ],
+    "object_marking_refs": [],
+    "name": "OSRFramework",
+    "description": "A tool to collect information from open sources.",
+    "tool_types": ["information-gathering"],
+    "aliases": ["usufy", "searchfy", "mailfy", "domainfy"],
+    "kill_chain_phases": [
+        {
+            "kill_chain_name": "lockheed-martin-cyber-kill-chain",
+            "phase_name": "reconnaissance"
+        }
+    ],
+    "tool_version": "0.21.0"
+}

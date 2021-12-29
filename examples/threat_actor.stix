@@ -8,6 +8,7 @@
     "revoked": false,
     "labels": ["hack"],
     "confidence": 100,
+    "lang": "en",
     "external_references": [
         {
             "source_name": "NASA",
@@ -25,9 +26,13 @@
     "name": "Evil Org",
     "description": "The Evil Org threat actor group",
     "aliases": ["Syndicate 1", "Evil Syndicate 99"],
+    "first_seen": "2021-12-31T00:00:01.000Z",
+    "last_seen": "2021-12-31T00:00:01.000Z",
     "roles": ["director"],
     "goals": ["Steal bank money", "Steal credit cards"],
     "sophistication": "advanced",
     "resource_level": "team",
-    "primary_motivation": "organizational-gain"
+    "primary_motivation": "organizational-gain",
+    "secondary_motivations": ["personal-gain", "dominance"],
+    "personal_motivations": ["ideology", "notoriety", "revenge"]
 }
