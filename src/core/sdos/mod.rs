@@ -22,6 +22,8 @@
 ///
 /// Each of these objects corresponds to a concept commonly used in Cyber Threat Intelligence investigations and implement the `STIXObject` trait so as to include the (de)serializing features associated to them.
 /// Note that required parameters and optional parameters compatibility is majorly enforced so as to implement the requirements defined in the STIX standard itself.
+pub mod note;
+//pub mod observed_data;
 pub mod opinion;
 pub mod report;
 pub mod threat_actor;
