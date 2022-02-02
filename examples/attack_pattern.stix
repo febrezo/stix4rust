@@ -1,0 +1,15 @@
+{
+    "type": "attack-pattern",
+    "spec_version": "2.1",
+    "id": "attack-pattern--7e33a43e-e34b-40ec-89da-36c9bb2cacd5",
+    "created": "2016-05-12T08:17:27.000Z",
+    "modified": "2016-05-12T08:17:27.000Z",
+    "name": "Spear Phishing as Practiced by Adversary X",
+    "description": "A particular form of spear phishing where the attacker claims that the target had won a contest, including personal details, to get them to click on a link.",
+    "external_references": [
+        {
+            "source_name": "capec",
+            "external_id": "CAPEC-163"
+        }
+    ]
+}
