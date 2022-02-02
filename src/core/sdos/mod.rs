@@ -28,7 +28,7 @@
 // pub mod grouping;
 // pub mod identity;
 // pub mod indicator;
-// pub mod infrastructure;
+pub mod infrastructure;
 pub mod intrusion_set;
 pub mod location;
 pub mod malware;
