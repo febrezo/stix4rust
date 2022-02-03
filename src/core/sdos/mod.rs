@@ -24,7 +24,7 @@
 /// Note that required parameters and optional parameters compatibility is majorly enforced so as to implement the requirements defined in the STIX standard itself.
 pub mod attack_pattern;
 pub mod campaign;
-// pub mod course_of_action;
+pub mod course_of_action;
 pub mod grouping;
 // pub mod identity;
 // pub mod indicator;
