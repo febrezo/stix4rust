@@ -25,7 +25,7 @@
 pub mod attack_pattern;
 pub mod campaign;
 // pub mod course_of_action;
-// pub mod grouping;
+pub mod grouping;
 // pub mod identity;
 // pub mod indicator;
 pub mod infrastructure;
