@@ -5,7 +5,7 @@ use crate::core::STIXObject;
 use crate::core::types::{ExternalReference, GranularMarking};
 
 #[derive(Serialize, Deserialize, Validate, Debug)]
-pub struct ThreatActor {
+pub struct Identity {
     // Required common properties
     pub id: String,
     pub spec_version: String,
@@ -32,28 +32,16 @@ pub struct ThreatActor {
     pub name: String,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub description: Option<String>,
-    pub threat_actor_types: Vec<String>,
-    #[serde(skip_serializing_if = "Option::is_none")]
-    pub aliases: Option<Vec<String>>,
-    #[serde(skip_serializing_if = "Option::is_none")]
-    pub first_seen: Option<DateTime<Utc>>,
-    #[serde(skip_serializing_if = "Option::is_none")]
-    pub last_seen: Option<DateTime<Utc>>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub roles: Option<Vec<String>>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub goals: Option<Vec<String>>,
+    pub identity_class: Option<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub sophistication: Option<String>,
+    pub sectors: Option<Vec<String>>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub resource_level: Option<String>,
-    #[serde(skip_serializing_if = "Option::is_none")]
-    pub primary_motivation: Option<String>,
-    #[serde(skip_serializing_if = "Option::is_none")]
-    pub secondary_motivations: Option<Vec<String>>,
-    #[serde(skip_serializing_if = "Option::is_none")]
-    pub personal_motivations: Option<Vec<String>>
+    pub contact_information: Option<String>
+
 }
 
-#[typetag::serde(name = "threat-actor")]
-impl STIXObject for ThreatActor {}
+#[typetag::serde(name = "identity")]
+impl STIXObject for Identity {}
